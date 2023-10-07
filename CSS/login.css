@@ -1,0 +1,52 @@
+/* Style for the Login container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+/* Style for the login form */
+#login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center the form content */
+}
+
+#username,
+#password {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto; /* Center the fields horizontally */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#login-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: #555;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

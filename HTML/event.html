@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Health & Harmony</title>
+    <style>
+        /* Custom CSS for the navbar */
+        .navbar {
+            background-color: black;
+        }
+
+        .navbar-brand {
+            color: white;
+            margin-right: 30%;
+            font-family: "Lucida Calligraphy", sans-serif;
+        }
+
+
+        .navbar-nav .nav-link {
+            color: white;
+            margin-left: 100px;
+            text-align: right;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-container {
+            background-color: black;
+            color: white;
+        }
+
+        @media (max-width: 767px) {
+            /* Center align navbar items on mobile */
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-toggler {
+                margin: 0 auto; /* Center align the toggle button */
+            }
+            .navbar .nav-link{
+                text-align: center;
+                margin: 0;
+
+            }
+        }
+    </style>
+    <!-- Include your main CSS file for navigation styles -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- Include your event-specific CSS file -->
+    <link rel="stylesheet" href="../CSS/event.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container navbar-container">
+        <a class="navbar-brand" href="#">Health & Harmony</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Added ml-auto to align items right -->
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/article.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/event.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Create Event Button -->
+<div class="create-event-button">
+    <button id="create-event-btn">Create Event</button>
+</div>
+
+<!-- Event Content -->
+<div class="event-container">
+    <!-- Displayed events will appear here -->
+</div>
+<!-- Modal for Editing Events -->
+<div id="editEventModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Event</h2>
+        <form id="edit-event-form">
+            <input type="hidden" id="edit-event-index" value="">
+            <label for="edit-event-title">Title:</label>
+            <input type="text" id="edit-event-title" required>
+            <label for="edit-event-date">Date:</label>
+            <input type="text" id="edit-event-date" required>
+            <label for="edit-event-location">Location:</label>
+            <input type="text" id="edit-event-location" required>
+            <label for="edit-event-description">Description:</label>
+            <textarea id="edit-event-description" required></textarea>
+            <div class="button-container">
+                <button type="submit" id="save-edit-event">Save</button>
+                <button type="button" id="cancel-edit-event">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- User Registration -->
+<section class="user-registration">
+    <div class="container">
+        <h2>Join Our Community</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2023 Health & Harmony Inc.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="../JAVASCRIPT/script.js"></script>
+<script src="../JAVASCRIPT/event.js"></script>
+<script src="../JAVASCRIPT/event1.js"></script>
+</body>
+</html>

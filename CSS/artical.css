@@ -1,0 +1,80 @@
+
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-writing {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#image-preview img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+button {
+    color: #141515;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#post-article {
+    margin-top: 10px;
+    background-color: #141515;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.article {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+.article-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+}

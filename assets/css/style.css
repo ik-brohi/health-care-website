@@ -5,7 +5,50 @@ body, h1, h2, p {
     padding: 0;
 }
 
+/* Custom CSS for the navbar */
+.navbar {
+    background-color: black;
+}
 
+.navbar-brand {
+    color: white;
+    margin-right: 30%;
+    font-family: "Lucida Calligraphy", sans-serif;
+}
+.navbar-brand , a:hover {
+    color: #ffffff !important; ;
+}
+
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-container {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    /* Center align navbar items on mobile */
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-toggler {
+        margin: 0 auto; /* Center align the toggle button */
+    }
+    .navbar .nav-link{
+        text-align: center;
+        margin: 0;
+
+    }
+}
 
 
 
@@ -13,7 +56,7 @@ body, h1, h2, p {
 
 /* Hero Section styles */
 .hero {
-    background-image: url('../IMAGES/h.jpg');
+    background-image: url('/assets/images/h.jpg');
     background-size: cover;
     color: white;
     text-align: center;
